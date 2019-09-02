@@ -1,0 +1,27 @@
+.searchBar {
+  position: relative;
+  .am-search {
+    z-index: 1;
+    background: transparent;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+    .am-search-input {
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.6);
+      .am-search-synthetic-ph-placeholder {
+        color: #999999;
+      }
+    }
+    .am-search-cancel {
+      color: #999999;
+    }
+  }
+  img {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}

@@ -1,0 +1,28 @@
+.mall {
+    padding-bottom: .6rem;
+    .swiper-container {
+        margin-top: .1rem;
+    }
+    .mallTop {
+        background: #fff;
+    }
+}
+.mallTypes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: .14rem 0;
+    li {
+        width: 20%;
+    }
+    img {
+        width: .52rem;
+        height: .52rem;
+    }
+}
+.recommend {
+    margin-top: .1rem;
+    background: #fff;
+    padding-top: .14rem;
+    padding-bottom: .01rem;
+}

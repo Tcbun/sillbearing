@@ -1,0 +1,56 @@
+.productListWrap {
+    background: #fff;
+    padding-top: .14rem;
+}
+.productList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  li {
+    width: 48%;
+    box-shadow: 0 0 10px #eeeeee;
+    margin-bottom: 0.14rem;
+    border-radius: 10px;
+    overflow: hidden;
+    a {
+      .productBottom {
+        text-align: left;
+        box-sizing: border-box;
+        padding: 0rem 0.08rem 0.06rem 0.08rem;
+        background: #fff;
+      }
+      .productPic {
+        display: block;
+        width: 100%;
+      }
+      .subject {
+        font-size: 0.13rem;
+        font-weight: bold;
+        padding: 0.06rem 0;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .category {
+        font-size: 0.13rem;
+        color: #666666;
+        padding-bottom: 0.06rem;
+      }
+      .priceAndEmail {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .productPrice {
+            font-size: .15rem;
+            color: #d20722;
+            font-weight: bold;
+        }
+        .emailIcon {
+            width: .18rem;
+            height: .145rem;
+        }
+      }
+    }
+  }
+}

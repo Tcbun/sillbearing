@@ -1,0 +1,46 @@
+.moduleTitle {
+    font-weight: bold;
+    margin-bottom: .2rem;
+    color: #333333;
+    position: relative;
+    font-size: .18rem;
+    z-index: 998;
+}
+.gradblue {
+    position: absolute;
+    left:50%;
+    top:50%;
+    width: .7rem;
+    height: .1rem;
+    margin-left: -.35rem;
+    margin-top: .03rem;
+    z-index: -1;
+    background: -webkit-linear-gradient(to to right,2d85ff, fff); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(to right,2d85ff, fff); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(to right,2d85ff, fff); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right,#2d85ff, #fff); /* 标准的语法 */
+}
+.brandsList {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.brandsItem {
+    width: 22.93%;
+    &:nth-of-type(1),
+    &:nth-of-type(2),
+    &:nth-of-type(3),
+    &:nth-of-type(4) {
+        margin-bottom: .14rem;
+    }
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+.brands {
+    background: #fff;
+    padding-bottom: .14rem;
+    padding-top: .14rem;
+}

@@ -1,0 +1,88 @@
+.user {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 0.28rem;
+  .userTX {
+    width: 100%;
+    margin-bottom: 0.14rem;
+    img {
+      width: 0.9rem;
+      height: 0.9rem;
+      border-radius: 50%;
+      margin-bottom: 0.14rem;
+    }
+    div {
+      color: #fff;
+      font-weight: bold;
+      font-size: 0.17rem;
+    }
+  }
+}
+
+.userInfo {
+  width: 80%;
+  margin: 0 auto;
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 0.1rem;
+  box-shadow: 0 0 10px gray;
+  padding: 0.14rem 0;
+  > div {
+    width: 33.3%;
+    > div:nth-of-type(1) {
+      font-size: 0.18rem;
+      color: #333333;
+      margin-bottom: 0.07rem;
+    }
+    > div:nth-of-type(2) {
+      font-size: 0.14rem;
+      color: #333333;
+    }
+  }
+}
+
+.mebg {
+  width: 100%;
+}
+
+.userManagerList {
+  width: 100%;
+  background: #fff;
+  margin: 0 auto;
+  li {
+    padding: 0.1rem 0.2rem;
+    border-bottom: 1px solid #eeeeee;
+    position: relative;
+    > a {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      img:nth-of-type(1) {
+        width: 0.18rem;
+        height: 0.21rem;
+        display: block;
+        margin-right: 0.2rem;
+      }
+    }
+    > a {
+      img:nth-of-type(2) {
+        display: block;
+        width: 0.15rem;
+        height: 0.195rem;
+        position: absolute;
+        right: 0.2rem;
+      }
+    }
+    div {
+      font-size: 0.16rem;
+      color: #333333;
+    }
+  }
+}
