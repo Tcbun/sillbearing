@@ -1,0 +1,128 @@
+.shoppingMall {
+    font-size: .16rem;
+    height: 100vh;
+    background: #fff;
+
+    .falseSearchWrap {
+        padding-bottom: .1rem;
+        background: #1b5b9f;
+    }
+
+    .conditionsQuery {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: #fff;
+        padding: .1rem 0;
+        border-bottom: 1px solid #eee;
+
+        >div {
+            font-size: .16rem;
+            width: 50%;
+            position: relative;
+
+            >.dsj {
+                position: absolute;
+                border-color: gray transparent transparent transparent;
+                border-style: solid;
+                border-width: .05rem .03rem 0 .03rem;
+                height: 0;
+                width: 0;
+                top: 50%;
+                margin-top: -2.5px;
+                margin-left: .1rem;
+            }
+        }
+    }
+
+    .conditionsQueryLeft {
+        border-right: 1px solid #eee;
+        position: relative;
+
+        .conditionsQueryLeftMenu {
+            position: absolute;
+            top: .27rem;
+            left: 0;
+            width: 200%;
+            background: #fff;
+            color: #333;
+
+            li {
+                border-bottom: 1px solid #eee;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                box-sizing: border-box;
+                padding: .1rem .24rem;
+
+                >div:nth-of-type(1) {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        height: .16rem;
+                        display: none;
+                    }
+                }
+
+                div {
+                    font-size: .16rem;
+                }
+            }
+        }
+    }
+}
+
+.conditionsQueryLeftMenu {
+    transition: all .1s;
+}
+
+.selected {
+    * {
+        color: red;
+    }
+}
+
+.conditionsQueryMenuZhezhao {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .4);
+    display: none;
+}
+
+.conditionsQueryRight {
+    .conditionsQueryRightMenu {
+        position: absolute;
+        top: .27rem;
+        left: -100%;
+        width: 200%;
+        background: #fff;
+        color: #333;
+
+        li {
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+            padding: .1rem .24rem;
+
+            >div:nth-of-type(1) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    height: .16rem;
+                    display: none;
+                }
+            }
+
+            div {
+                font-size: .16rem;
+            }
+        }
+    }
+}

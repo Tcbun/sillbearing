@@ -6,8 +6,17 @@ import ProductList from '../../components/productList';
 import { connect } from 'react-redux';
 import './index.scss';
 import ModuleTitle from '../../components/moduleTitle';
+import Footer from '../../components/footer';
+import Axios from "axios";
 
 class Home extends Component {
+    componentDidMount() {
+        Axios.get('http://en.sillcn.com/mobileIO/newestDeal')
+            .then(function (res) {
+                console.log(res);
+            })
+    }
+
     render() {
         const { hotProduct } = this.props;
         return (
@@ -21,6 +30,7 @@ class Home extends Component {
                         <ProductList productList={hotProduct} />
                     </div>
                 </div>
+              <Footer />
             </div>
         )
     }

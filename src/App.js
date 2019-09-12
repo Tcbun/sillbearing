@@ -10,13 +10,14 @@ import { Provider } from 'react-redux';
 import store from './store';
 // 页面
 import Home from './pages/home';
-import SearchPage from './pages/searchPage';
+import Search from './pages/search';
 import Mall from './pages/mall';
 import Release from './pages/release';
 import Purchase from './pages/purchase';
 import People from './pages/people';
-// 组件
-import Footer from './components/footer';
+import ReleaseSuccess from './pages/releaseSuccess';
+import ShoppingMall from './pages/shoppingMall';
+import Buy from './pages/buy';
 
 function App() {
   return (
@@ -26,12 +27,14 @@ function App() {
           <React.Fragment>
             <Router>
               <Route path="/" exact component={Home} />
-              <Route path="/search" component={SearchPage} />
+              <Route path="/search" component={Search} />
               <Route path="/mall" component={Mall} />
               <Route path="/release" component={Release} />
               <Route path="/purchase" component={Purchase} />
-              <Route path="/People" component={People} />
-              <Footer />
+              <Route path="/people" component={People} />
+              <Route path="/releaseSuccess" component={ReleaseSuccess} />
+              <Route path="/shoppingMall" component={ShoppingMall} />
+              <Route path="/buy" component={Buy} />
             </Router>
           </React.Fragment>
         </div>

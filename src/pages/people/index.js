@@ -9,6 +9,7 @@ import rightArrow from '../../static/rightArrow.png';
 import buyCar from '../../static/buycar.png';
 import collection from '../../static/collection.png';
 import setting from '../../static/setting.png';
+import Footer from '../../components/footer';
 
 class People extends Component {
     render() {
@@ -67,6 +68,7 @@ class People extends Component {
                         </Link>
                     </li>
                 </ul>
+                <Footer />
             </div>
         )
     }

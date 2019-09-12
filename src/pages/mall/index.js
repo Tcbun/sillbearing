@@ -16,6 +16,8 @@ import SteelBall from '../../static/SteelBall.png';
 import Equipment from '../../static/Equipment.png';
 import Stock from '../../static/Stock.png';
 
+import Footer from '../../components/footer';
+
 class Mall extends Component {
     componentDidMount = () => {
         new Swiper('.swiper-container', {
@@ -89,6 +91,7 @@ class Mall extends Component {
                         <ProductList productList={recommendList} style={{ marginTop: '-.6rem' }} />
                     </div>
                 </div>
+                <Footer />
             </div>
         )
     }

@@ -1,0 +1,40 @@
+.buyfooter {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: .10rem .1rem;
+    box-sizing: border-box;
+    border-top: 1px solid #eee;
+    z-index: 999;
+    div {
+        font-size: .12rem;
+        img {
+            width: .2rem;
+            height: .17rem;
+        }
+    }
+}
+.buyfooterAdd {
+    background: #ff8e0f;
+    padding: .1rem .2rem;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-top-left-radius: .1rem;
+    border-bottom-left-radius: .1rem;
+    font-size: .12rem;
+}
+.buyfooterBuy {
+    background: #d20722;
+    padding: .1rem .3rem;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-top-right-radius: .1rem;
+    border-bottom-right-radius: .1rem;
+    font-size: .12rem;
+}

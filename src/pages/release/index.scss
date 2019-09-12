@@ -1,0 +1,50 @@
+.release {
+    background: #fff;
+    padding: .14rem .14rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 88vh;
+    .releaseForm {
+        background: #fff;
+        width: 100%;
+        li {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            line-height: .26rem;
+            border-bottom: 1px solid #eee;
+            padding: .1rem 0;
+            position: relative;
+                .releaseTip {
+                    position: absolute;
+                    right: .02rem;
+                    display: none;
+                }
+            span {
+                color: #d20722;
+                padding-right: .1rem;
+                font-size: .16rem;
+            }
+            div {
+                text-align: right;
+            }
+        }
+    }
+
+    * {
+        font-size: .16rem;
+    }
+
+    button {
+        width: 1.5rem;
+        height: .5rem;
+        background: #0089e9;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        color: #fff;
+        margin: .14rem auto;
+    }
+}

@@ -3,13 +3,34 @@ import './index.scss';
 import { WingBlank } from 'antd-mobile';
 import FalseSearch from '../../components/falseSearch';
 import ModuleTitle from '../../components/moduleTitle';
+import PurchaseTip from './tip';
 import { connect } from 'react-redux';
+import Footer from '../../components/footer';
 
 class Purchase extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            isTipShow: false
+        }
+    }
+    handleShowClick = (e) => {
+        e.stopPropagation();
+        this.setState({
+            isTipShow: true
+        })
+    }
+    handleHideClick = (e) => {
+        e.stopPropagation();
+        this.setState({
+            isTipShow: false
+        })
+    }
     render() {
         const { purchaseData } = this.props;
         return (
             <div className="purchase">
+                <PurchaseTip isTipShow={this.state.isTipShow} changeTipState={(e)=>this.handleHideClick(e)} />
                 <FalseSearch />
                 <WingBlank>
                     <div className="purchaseTitle">
@@ -17,7 +38,8 @@ class Purchase extends Component {
                     </div>
                     <ul className="purchaseList">
                         {purchaseData.map((item) => (
-                            <li key={item.id}>
+                            <li key={item.id} onClick={(e) => this.handleShowClick(e)}>
+                                <span className="quote">Quote</span>
                                 <div className="indexOrder">
                                     <div>Buy:{item.buy}</div>
                                     <div>In the quotation</div>
@@ -53,6 +75,7 @@ class Purchase extends Component {
                         ))}
                     </ul>
                 </WingBlank>
+                <Footer />
             </div>
         )
     }

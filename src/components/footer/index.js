@@ -25,34 +25,42 @@ class FooterComponent extends Component {
             <div className="footer">
                 <div onClick={() => atHomeDispatchFunction()}>
                     <Link to="/">
-                        <img src={isHomePage ? HomeActiveIcon : HomeIcon} alt="sill" />
+                        <div>
+                            <img src={isHomePage ? HomeActiveIcon : HomeIcon} alt="sill" />
+                        </div>
                         <div>Home</div>
                     </Link>
                 </div>
                 <div onClick={() => atMallDispatchFunction()}>
                     <Link to="/mall">
-                        <img src={isMallPage ? MallActiveIcon : MallIcon} alt="sill" />
+                        <div>
+                            <img src={isMallPage ? MallActiveIcon : MallIcon} alt="sill" />
+                        </div>
                         <div>Mall</div>
                     </Link>
                 </div>
                 <div className="releaseBtn">
-                    <Link to="/release">
+                    <Link to="/release" style={{ height:'100%' }}>
                         <div>
-                            <img src={releaseIcon} alt="sill"/>
+                            <img src={releaseIcon} alt="sill" />
                         </div>
                         <div></div>
-                        <div>Release</div>
+                        <div style={{fontSize:'.12rem'}}>Release</div>
                     </Link>
                 </div>
                 <div onClick={() => atPurchaseDispatchFunction()}>
                     <Link to="/purchase">
-                        <img src={isPurchasePage ? PurchaseActiveIcon : PurchaseIcon} alt="sill" />
+                        <div>
+                            <img src={isPurchasePage ? PurchaseActiveIcon : PurchaseIcon} alt="sill" />
+                        </div>
                         <div>Purchase</div>
                     </Link>
                 </div>
                 <div onClick={() => atPeopleDispatchFunction()}>
                     <Link to="/people">
-                        <img src={isPeoplePage ? PeopleActiveIcon : PeopleIcon} alt="sill" />
+                        <div>
+                            <img src={isPeoplePage ? PeopleActiveIcon : PeopleIcon} alt="sill" />
+                        </div>
                         <div>Me</div>
                     </Link>
                 </div>

@@ -22,7 +22,7 @@ class HotProduct extends Component {
                                             <div className="category">Category: Ball bearing Model：{item.model}</div>
                                             <div className="priceAndEmail">
                                                 <div className="productPrice">${item.price}</div>
-                                                <div><img src={Email} alt="sill" className="emailIcon" /></div>
+                                                <img src={Email} alt="sill" className="emailIcon" />
                                             </div>
                                         </div>
                                     </Link>

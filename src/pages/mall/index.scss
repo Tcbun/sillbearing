@@ -1,25 +1,56 @@
 .mall {
     padding-bottom: .6rem;
+
     .swiper-container {
         margin-top: .1rem;
     }
+
     .mallTop {
         background: #fff;
     }
 }
+
 .mallTypes {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: .14rem 0;
+    padding-bottom: .14rem;
+    overflow: hidden;
+
     li {
         width: 20%;
+        height: 100%;
+
+        >a {
+            display: block;
+            height: 100%;
+
+            >div {
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+
+                >img {
+                    display: block;
+                }
+            }
+
+            >div {
+                >div {
+                    font-size: .12rem;
+                }
+            }
+        }
     }
+
     img {
         width: .52rem;
         height: .52rem;
     }
 }
+
 .recommend {
     margin-top: .1rem;
     background: #fff;

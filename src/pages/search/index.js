@@ -2,7 +2,7 @@ import React,{ Component } from 'react';
 import SearchBar from '../../components/searchBar';
 import './index.scss';
 
-class SearchPage extends Component {
+class Search extends Component {
     render(){
         return(
             <div className="searchPage">
@@ -29,4 +29,4 @@ class SearchPage extends Component {
     }
 }
 
-export default SearchPage;
+export default Search;
